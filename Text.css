@@ -241,7 +241,7 @@ body {
     top: 10px; /* Adjust top position as needed */
     left: calc(90% ); /* Move the buttons to the middle of the page and add 50px to move them to the right */
     transform: translateX(-50%); /* Center the buttons horizontally */
-    flex-wrap: nowrap;
+
   }
   /* Style for login buttons */
   .top-buttons button {
@@ -284,9 +284,9 @@ body {
   .horizontal-buttons {
     position: absolute; /* Make it a reference point */
     top: 100px; /* Adjust top position as needed */
-    left: 50%;
+    left: 5%;
     flex-wrap: nowrap;
-    transform: translateX(-50%);
+
     display: flex; /* Make buttons horizontal */
   }
 

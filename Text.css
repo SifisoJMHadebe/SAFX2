@@ -171,7 +171,7 @@ min-height: 290px; /* Set minimum width for the image */
   }
   .mid-parent-container .imagecontainer  {
 
-    transform: translateX(-60%); /* Move container back by half its width */
+    transform: translateX(-50%); /* Move container back by half its width */
 
   }
 

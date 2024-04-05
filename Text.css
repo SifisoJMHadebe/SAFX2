@@ -178,6 +178,10 @@ min-height: 290px; /* Set minimum width for the image */
     width: 100%; /* Set width to 100% */
   top: 550px;
   }
+  .container {
+    right: calc(20% ); /* Move the buttons to the middle of the page and add 50px to move them to the right */
+   
+  }
   .table-container {
     top: calc(680px);
   }

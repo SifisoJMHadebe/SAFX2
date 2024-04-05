@@ -19,7 +19,6 @@ html, body {
   color: black; /* Set text color to black */
   background-color: transparent; /* Remove background color */
 }
-
 #table2 tr:first-child {
 background-color: white;
 }
@@ -179,8 +178,12 @@ min-height: 290px; /* Set minimum width for the image */
     width: 100%; /* Set width to 100% */
   top: 550px;
   }
-
-
+  .table-container {
+    top: calc(680px);
+  }
+  #table2 {
+    top: calc(780px);
+  }
 }
 .container {
   position: absolute;

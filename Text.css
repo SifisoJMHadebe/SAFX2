@@ -291,7 +291,7 @@ body {
     position: absolute; /* Make it a reference point */
     top: 100px; /* Adjust top position as needed */
     left: 5%;
-    flex-wrap: nowrap;
+
 
     display: flex; /* Make buttons horizontal */
   }
@@ -338,12 +338,13 @@ body {
 
 /* Additional CSS for the footer */
 .footer {
-  background-color: #f2f2f2;
+
   padding: 20px;
   display: flex; /* Set to flex */
   justify-content: space-between; /* Spread items horizontally */
   margin-left: 1%; /* Add 1% margin from the left */
   margin-right: 1%;
+
 }
 
 .footer-text {

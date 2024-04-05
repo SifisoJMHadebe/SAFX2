@@ -170,8 +170,8 @@ min-height: 290px; /* Set minimum width for the image */
     align-items: center; /* Center items horizontally */
   }
   .mid-parent-container .imagecontainer  {
-    left: 20%; /* Set left to 50% */
-    transform: translateX(-50%); /* Move container back by half its width */
+
+    transform: translateX(-60%); /* Move container back by half its width */
 
   }
 

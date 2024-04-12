@@ -1,5 +1,6 @@
+
 html, body {
-  min-width: 600px; /* Set minimum width for the entire webpage */
+  min-width: 1200px; /* Set minimum width for the entire webpage */
 
 }
 #table2 {
@@ -23,7 +24,7 @@ html, body {
 background-color: white;
 }
 #table2 tbody td {
-font-size: 17px; /* Adjust the font size as needed */
+font-size: 1.3vw; /* Adjust the font size as needed */
 }
 #table2 th {
   background-color:white; /* Grey background color for header */
@@ -36,12 +37,12 @@ border-radius: 10px;
 padding: 20px;
 margin-top:  800px; /* Adjusted margin */
 max-width: 950px;
-font-size: 21px;
+font-size: 1.5vw;
 line-height: 1.6;
 }
 
 .text-box2 h2 {
-font-size: 29px;
+font-size: 1.8vw;
 font-weight: bold;
 
 }
@@ -78,7 +79,7 @@ line-height: 2.5; /* Increased line height */
 table {
 border-collapse: collapse; /* Collapse borders */
 width: 100%; /* Full width */
-
+top: 50%;
 height: 110px; /* Adjust the height as needed */
 }
 
@@ -111,7 +112,7 @@ background-color: #658deb; /* Light blue */
 
 /* Button styles */
 .join-button {
-font-size: 20px;
+font-size: 1.2vw;
 background-color: blue;
 color: white;
 border: 2px solid blue;
@@ -144,19 +145,25 @@ width: auto;
 min-height: 290px; /* Set minimum width for the image */
 }
 .table-container {
-
-  top: calc(590px);
-
+  top: 590px;
   left: calc(2%);
   flex-wrap: nowrap;
   margin-top: 0%;
-
   width: calc(100%);
   position: absolute;
-  
-  /* Added max-height for limiting table growth */
   max-height: 300px;  /* Adjust this value as needed */
-  
+}
+.table-container table {
+  width: 100%; /* Full width */
+}
+
+.table-container td {
+  padding: 8px; /* Padding for cells */
+  text-align: center; /* Center-align text */
+  border: 1px solid #dddddd; /* Border for cells */
+  color: white; /* Text color */
+  font-size: 1.3vw; /* Font size */
+
 }
 .mid-parent-container {
   display: flex;
@@ -253,7 +260,7 @@ body {
   .top-buttons button {
      border-radius: 10px; /* Round corners */
     padding: 10px 20px; /* Adjust padding for larger size */
-    font-size: 16px; /* Increase font size */
+    font-size: 1vw; /* Increase font size */
     border: 2px solid transparent; /* Add transparent border */
     cursor: pointer; /* Change cursor on hover */
     white-space: nowrap;
@@ -300,7 +307,7 @@ body {
     border-radius: 10px;
     flex-wrap: nowrap;
     padding: 5px 15px; /* Reduce padding for smaller size */
-    font-size: 16px; /* Decrease font size */
+    font-size: 1vw; /* Decrease font size */
     background-color: transparent;
     color: #000000; /* Blue text color */
     cursor: pointer;
@@ -371,11 +378,10 @@ body {
 
 /* Increase font size for items below "Company" and "Media" */
 .footer-text ul li a {
-  font-size: 20px;
+  font-size: 1vw;
 }
 
 /* Increase font size for "Company" and "Media" headers */
 .footer-text h3 {
-  font-size: 22px; /* Adjust the font size as needed */
+  font-size: 1.6vw; /* Adjust the font size as needed */
 }
-

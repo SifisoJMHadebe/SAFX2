@@ -1,21 +1,13 @@
 
-html, body {
-  min-width: 1200px; /* Set minimum width for the entire webpage */
-
-}
 #table2 {
   border-collapse: collapse;
-  width: 100%;
-  max-width: 800px; /* Adjust maximum width as needed */
-  margin: 20px auto; /* Center the table horizontally */
+  width: 50vw;
   position: absolute; /* Position the table */
-  top: 100%; /* Position 70% from the top */
-  right: 0%; /* Position 10% from the right */
+  top: 95vh; /* Position 70% from the top */
+  right: 0vw; /* Position 10% from the right */
 }
-
 #table2 th, #table2 td {
-  border: 1px solid #ddd;
-  padding: 8px;
+  padding: .8vh;
   text-align: left;
   color: black; /* Set text color to black */
   background-color: transparent; /* Remove background color */
@@ -24,107 +16,74 @@ html, body {
 background-color: white;
 }
 #table2 tbody td {
-font-size: 1.3vw; /* Adjust the font size as needed */
+font-size: min(1.3vw,2.3vh); /* Adjust the font size as needed */
 }
 #table2 th {
   background-color:white; /* Grey background color for header */
-  font-size: 20px; /* Increased font size for header */
+  font-size: min(1.4vw,2.4vh); /* Increased font size for header */
   font-weight: bold; /* Bold font weight for header */
 }
 .text-box2 {
 background-color: rgba(255, 255, 255, 0.578);
-border-radius: 10px;
-padding: 20px;
-margin-top:  800px; /* Adjusted margin */
-max-width: 950px;
-font-size: 1.5vw;
-line-height: 1.6;
+margin-top:  95vh; /* Adjusted margin */
+font-size: min(1.5vw,2.5vh);
+line-height: 6.5vh;
 }
-
 .text-box2 h2 {
-font-size: 1.8vw;
+font-size: min(1.8vw,2.8vh);
 font-weight: bold;
 
 }
-
 .text-box2 ol {
 list-style-type: none; /* Remove default numbering */
 counter-reset: my-counter; /* Reset counter for custom numbering */
 padding-left: 0; /* Remove default padding */
 }
-
-.text-box2 ol li {
-
-margin-bottom: 25px;
-}
-
 .text-box2 ol li::before {
 content: counter(my-counter); /* Use counter for numbering */
 counter-increment: my-counter; /* Increment counter */
 display: inline-block;
-width: 30px;
-height: 30px;
+width: 1.5vw;
+height: 3vh;
 background-color: blue; /* Blue circles */
 border-radius: 50%; /* Rounded circles */
 text-align: center;
-line-height: 30px; /* Vertically center text */
+line-height: 2.9vh; /* Vertically center text */
 color: white; /* White text */
 font-weight: bold;
-margin-right: 10px;
+margin-right: .8vw;
 }
-.text-box2 p {
-line-height: 2.5; /* Increased line height */
-}
-/* CSS to style the table */
 table {
 border-collapse: collapse; /* Collapse borders */
-width: 100%; /* Full width */
-top: 50%;
-height: 110px; /* Adjust the height as needed */
+width: 100vw; /* Full width */
+top: 50vh;
+height: 11vh; /* Adjust the height as needed */
 }
-
-/* Style for table cells */
-td {
-padding: 8px; /* Padding for cells */
-text-align: center; /* Center-align text */
-border: 1px solid #dddddd; /* Border for cells */
-color: white; /* Text color */
-font-size: 22px; /* Increase font size */
-}
-
-/* Alternate row background color */
 tr:nth-child(even) {
 background-color: #f2f2f2; /* Light grey */
 }
-
-/* First row background color */
 tr:first-child {
 background-color: #658deb; /* Light blue */
 }
-      img {
+img {
     position: absolute; /* Set position to absolute for custom positioning */
-    width: 100px; /* Adjust width as needed */
-    height: 70px; /* Maintain aspect ratio */
-    left: 20px; /* Adjust left position */
-    bottom: 30%; /* Adjust bottom position */
-    top:20%;
-      }
+    width: 100vw; /* Adjust width as needed */
+    height: 70vh; /* Maintain aspect ratio */
+    left: 1vw; /* Adjust left position */
 
-/* Button styles */
+      }
 .join-button {
-font-size: 1.2vw;
+font-size: min(1.2vw,2.2vh);
 background-color: blue;
 color: white;
 border: 2px solid blue;
 border-radius: 15px;
-padding: 10px 20px;
+padding: 1vh 1vw;
 cursor: pointer;
 transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 z-index: 999; /* Ensure the header stays on top of other content */
 position: relative;
 }
-
-/* Button hover styles */
 .join-button:hover {
 background-color: white;
 color: blue;
@@ -132,81 +91,82 @@ border-color: blue;
 }
 .imagecontainer {
   position: absolute;
-  top: calc(149px);
-  left: calc(2%);
+  top:14vh;
+  left: 2vw;
   display: flex;
   justify-content: center;
   
 }
-
 .imagecontainer img {
-height: 28vw;
-width: auto;
-min-height: 290px; /* Set minimum width for the image */
+height: 60vh;
+width: 50vw;
 }
 .table-container {
-  top: 590px;
-  left: calc(2%);
-  flex-wrap: nowrap;
-  margin-top: 0%;
-  width: calc(100%);
+  top: 80vh;
+  width: 100vw;
   position: absolute;
-  max-height: 300px;  /* Adjust this value as needed */
 }
 .table-container table {
-  width: 100%; /* Full width */
+  width: 100vw; /* Full width */
 }
-
 .table-container td {
-  padding: 8px; /* Padding for cells */
   text-align: center; /* Center-align text */
   border: 1px solid #dddddd; /* Border for cells */
   color: white; /* Text color */
-  font-size: 1.3vw; /* Font size */
-
+  font-size: min(2.3vw,3.3vh); /* Font size */
 }
 .mid-parent-container {
   display: flex;
   flex-direction: row; /* Horizontal layout by default */
   flex-wrap: wrap; /* Allow items to wrap to the next row */
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .mid-parent-container {
     flex-direction: column;
     align-items: center; /* Center items horizontally */
   }
   .mid-parent-container .imagecontainer  {
-
     transform: translateX(-50%); /* Move container back by half its width */
-
+    
   }
-
   .mid-parent-container .container {
-
-  top: 550px;
+  top: 68vh;
   right: auto; /* Move the buttons to the middle of the page and add 50px to move them to the right */
- left: 30px;
   }
+  .imagecontainer img {
+    height: 50vh;
+    width: 97vw;
   
+  }
   .table-container {
-    top: calc(680px);
+    top: 100vh;
   }
   #table2 {
-    top: calc(780px);
+    top: 140vh;
+    left: 3vw;
   }
+  .text-box2 {
+  margin-top: 190vh;  
+  }
+  .footer-text {
+   margin-top: 5vh;    
+  }
+  .container {
+    width: 100vw;
+    }
+.horizontal-buttons {
+min-width: 100px;
+font-size: max(1vw,2vh,100px); /* Decrease font size */
+}
 }
 .container {
   position: absolute;
-  right: calc(2% ); /* Move the buttons to the middle of the page and add 50px to move them to the right */
-  top: calc(30px ); /* Move the buttons to the middle of the page and add 50px to move them to the right */
-  bottom: calc(70px ) ;
-
+  right: 2vw; /* Move the buttons to the middle of the page and add 50px to move them to the right */
+  top: 25vh ; /* Move the buttons to the middle of the page and add 50px to move them to the right */
     display: flex;
     flex-direction: column; /* Ensure vertical stacking */
   justify-content: center; /* Align children horizontally with space between */
-
  }
-/* Apply flexbox to align items vertically */
 .bottom-center {
 
 display: flex;
@@ -214,29 +174,10 @@ flex-direction: column;
 align-items: center;
 
 }
-
-/* Individual span styles */
-.bottom-center span {
-font-size: 24%;
-color: black;
-white-space: nowrap; /* Prevent wrapping */
-font-size: calc(max(1em, 20px) + 1vw); /* Minimum font size of 20px or 1em, whichever is larger, plus 1vw */
-}
-.bottom-center span:first-child {
-
-font-weight: bold;
-color: green;
-}
-
-.bottom-center span:nth-child(3) {
-font-size: 18%;font-weight: normal;
-color: gray;
-}
 .parent-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center content horizontally */
-
 }
 .bottom-center span:last-child {
 
@@ -246,142 +187,104 @@ color: black;
 body {
   overflow-x: scroll;
 }
-
-  /* CSS for buttons */
-  .top-buttons {
+.top-buttons {
     display: flex;
     position: absolute; /* Fix container to the top */
-    top: 10px; /* Adjust top position as needed */
-    left: calc(90% ); /* Move the buttons to the middle of the page and add 50px to move them to the right */
-    transform: translateX(-50%); /* Center the buttons horizontally */
+    top: .8vh; /* Adjust top position as needed */
+    left: 90vw; /* Move the buttons to the middle of the page and add 50px to move them to the right */
 
   }
-  /* Style for login buttons */
-  .top-buttons button {
+.top-buttons button {
      border-radius: 10px; /* Round corners */
-    padding: 10px 20px; /* Adjust padding for larger size */
-    font-size: 1vw; /* Increase font size */
+     font-size: min(2vw,3vh); /* Increase font size */
     border: 2px solid transparent; /* Add transparent border */
     cursor: pointer; /* Change cursor on hover */
     white-space: nowrap;
-    margin-right: 0px; /* Add margin between buttons */
   }
-
-  /* Style for Sign Up button */
-  .top-buttons button:first-child {
+.top-buttons button:first-child {
     background-color: #007bff; /* Button background color */
     color: #fff; /* Button text color */
   }
-
-  /* Style for Log In button */
-  .top-buttons button:last-child {
+.top-buttons button:last-child {
     background-color: #fff; /* Button background color */
     color: #007bff; /* Button text color */
   }
-
-  /* Hover effect for Sign Up button */
-  .top-buttons button:first-child:hover {
+.top-buttons button:first-child:hover {
     background-color: #fff; /* White background color on hover */
     color: #007bff; /* Blue text color on hover */
     border-color: #007bff; /* Blue border color on hover */
   }
-
-  /* Hover effect for Log In button */
-  .top-buttons button:last-child:hover {
+.top-buttons button:last-child:hover {
     background-color: #007bff; /* Light blue background color on hover */
     color: #fff; /* White text color on hover */
     border-color: #127ff3; /* Dark blue border color on hover */
   }
-
-  /* Additional buttons styles */
-  .horizontal-buttons {
+.horizontal-buttons {
     position: absolute; /* Make it a reference point */
-    top: 100px; /* Adjust top position as needed */
-    left: 5%;
-
-
+    top: 3vh; /* Adjust top position as needed */
     display: flex; /* Make buttons horizontal */
   }
-
-  .horizontal-buttons button {
-    border-radius: 10px;
+.horizontal-buttons button {
+    border-radius: 10vw;
     flex-wrap: nowrap;
-    padding: 5px 15px; /* Reduce padding for smaller size */
-    font-size: 1vw; /* Decrease font size */
+    padding: 4vh 3vw; /* Reduce padding for smaller size */
+    font-size: min(2vw,3vh); /* Decrease font size */
     background-color: transparent;
     color: #000000; /* Blue text color */
     cursor: pointer;
-    margin-right: 10px; /* Add margin between buttons */
+    margin-right: 10vw; /* Add margin between buttons */
     border: none; /* Remove border */
   }
-
-  .horizontal-buttons button:last-child {
+.horizontal-buttons button:last-child {
     flex-wrap: nowrap;
     margin-right: 0; /* Remove margin for the last button */
   }
-
-  .horizontal-buttons button:hover {
+.horizontal-buttons button:hover {
     background-color: #007bff; /* Blue background color on hover */
     color: #fff; /* White text color on hover */
   }
-
-  /* Page container */
-  .page-container {
+.page-container {
     position: absolute;
-    top: 150px; /* Adjust top position as needed */
-    left: 50%;
+    top: 1vw; /* Adjust top position as needed */
+    left: 50vw;
     transform: translateX(-50%);
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     display: none; /* Initially hidden */
   }
-
-  /* Show page container when hovering over buttons */
-  .horizontal-buttons button:hover + .page-container {
+.horizontal-buttons button:hover + .page-container {
     display: block;
   }
-  /* last */
- /* Styles for your website */
-
-/* Additional CSS for the footer */
 .footer {
-
   padding: 20px;
   display: flex; /* Set to flex */
   justify-content: space-between; /* Spread items horizontally */
-  margin-left: 1%; /* Add 1% margin from the left */
-  margin-right: 1%;
+  margin-left: 1vw; /* Add 1% margin from the left */
+  margin-right: 1vw;
+  margin-top: 15vh;
+  background-color: #f0f0f0; /* Change to your desired background color */
 
 }
-
 .footer-text {
   flex: 1; /* Take up remaining space */
 }
-
 .footer-links ul {
   list-style-type: none; /* Remove bullet points */
   padding: 0;
 }
-
 .footer-links ul li {
-  margin-bottom: 10px;
+  margin-bottom: 10vh;
 }
-
 .footer-links ul li a {
   text-decoration: none;
   color: black; /* Change text color to black */
 }
-
 .footer-links ul li a:hover {
   color: white; /* Change color on hover */
 }
-
-/* Increase font size for items below "Company" and "Media" */
 .footer-text ul li a {
-  font-size: 1vw;
+  font-size: min(1.5vw,2.5vh);
 }
-
-/* Increase font size for "Company" and "Media" headers */
 .footer-text h3 {
-  font-size: 1.6vw; /* Adjust the font size as needed */
+  font-size: min(1.6vw,3vh); /* Adjust the font size as needed */
 }

@@ -121,7 +121,7 @@ width: 50vw;
   flex-direction: row; /* Horizontal layout by default */
   flex-wrap: wrap; /* Allow items to wrap to the next row */
 }
-@media (max-width: 1050px) {
+@media (max-width: 1020px) {
   .mid-parent-container {
     flex-direction: column;
     align-items: center; /* Center items horizontally */
@@ -140,15 +140,15 @@ width: 50vw;
   
   }
   .table-container {
-    top: 70vh;
+    top: 75vh;
   }
   #table2 {
-    top: 85vh;
+    top: 90vh;
      width: 95vw;
   }
   .text-box2 {
     background-color: rgba(255, 255, 255, 0.578);
-    margin-top:  115vh; /* Adjusted margin */
+    margin-top:  125vh; /* Adjusted margin */
     font-size: min(2vw,2.5vh);
     line-height: 4.5vh;
     
@@ -180,6 +180,9 @@ width: 50vw;
     }
   .footer-text {
    margin-top:none;    
+  }
+  .footer-links ul li {
+    margin-bottom: 0vh;
   }
   .container {
     width: 100vw;

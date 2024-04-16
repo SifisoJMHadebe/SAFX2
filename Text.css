@@ -28,6 +28,7 @@ background-color: rgba(255, 255, 255, 0.578);
 margin-top:  95vh; /* Adjusted margin */
 font-size: min(2vw,2.5vh);
 line-height: 6.5vh;
+
 }
 .text-box2 h2 {
 font-size: min(2vw,2.8vh);
@@ -51,7 +52,7 @@ text-align: center;
 line-height: 2.9vh; /* Vertically center text */
 color: white; /* White text */
 font-weight: bold;
-margin-right: .8vw;
+margin-right: 2vw;
 }
 table {
 border-collapse: collapse; /* Collapse borders */
@@ -130,42 +131,53 @@ width: 50vw;
     
   }
   .mid-parent-container .container {
-  top: 68vh;
+  top: 50vh;
   right: auto; /* Move the buttons to the middle of the page and add 50px to move them to the right */
   }
   .imagecontainer img {
-    height: 50vh;
+    height: 35vh;
     width: 97vw;
   
   }
   .table-container {
-    top: 90vh;
+    top: 70vh;
   }
   #table2 {
-    top: 105vh;
+    top: 85vh;
      width: 95vw;
   }
   .text-box2 {
-  margin-top: 140vh; 
-  width: 100vw; 
-  font-size: min(2vw,2.5vh);
-  }
-  .text-box2 h2 {
+    background-color: rgba(255, 255, 255, 0.578);
+    margin-top:  115vh; /* Adjusted margin */
+    font-size: min(2vw,2.5vh);
+    line-height: 4.5vh;
+    
+    }
+    .text-box2 h2 {
     font-size: min(2vw,2.8vh);
     font-weight: bold;
     
     }
+    .text-box2 ol {
+    list-style-type: none; /* Remove default numbering */
+    counter-reset: my-counter; /* Reset counter for custom numbering */
+    padding-left: 0; /* Remove default padding */
+    }
     .text-box2 ol li::before {
-      width: 2.5vw;
-      height: 2vh;
-      background-color: blue; /* Blue circles */
-      border-radius: 50%; /* Rounded circles */
-      text-align: center;
-      line-height: 2.4vh; /* Vertically center text */
-      color: white; /* White text */
-      font-weight: bold;
-      margin-right: 1.3vw;
-      }
+    content: counter(my-counter); /* Use counter for numbering */
+    counter-increment: my-counter; /* Increment counter */
+    display: inline-block;
+    width: 3.5vw;
+    height: 2vh;
+    background-color: blue; /* Blue circles */
+    border-radius: 50%; /* Rounded circles */
+    text-align: center;
+    line-height: 1.9vh; /* Vertically center text */
+    color: white; /* White text */
+    font-weight: bold;
+    margin-right: 2vw;
+    font-size: min(3vw,3.8vh);
+    }
   .footer-text {
    margin-top:none;    
   }
@@ -177,6 +189,7 @@ min-width: 100px;
 font-size: max(1vw,2vh,100px); /* Decrease font size */
 }
 }
+
 .container {
   position: absolute;
   right: 4vw; /* Move the buttons to the middle of the page and add 50px to move them to the right */

@@ -16,21 +16,21 @@
 background-color: white;
 }
 #table2 tbody td {
-font-size: min(1.3vw,2.3vh); /* Adjust the font size as needed */
+font-size: min(1.8vw,2.3vh); /* Adjust the font size as needed */
 }
 #table2 th {
   background-color:white; /* Grey background color for header */
-  font-size: min(1.4vw,2.4vh); /* Increased font size for header */
+  font-size: min(1.9vw,2.4vh); /* Increased font size for header */
   font-weight: bold; /* Bold font weight for header */
 }
 .text-box2 {
 background-color: rgba(255, 255, 255, 0.578);
 margin-top:  95vh; /* Adjusted margin */
-font-size: min(1.5vw,2.5vh);
+font-size: min(2vw,2.5vh);
 line-height: 6.5vh;
 }
 .text-box2 h2 {
-font-size: min(1.8vw,2.8vh);
+font-size: min(2vw,2.8vh);
 font-weight: bold;
 
 }
@@ -73,7 +73,7 @@ img {
 
       }
 .join-button {
-font-size: min(1.2vw,2.2vh);
+font-size: min(1.7vw,2.2vh);
 background-color: blue;
 color: white;
 border: 2px solid blue;
@@ -113,14 +113,14 @@ width: 50vw;
   text-align: center; /* Center-align text */
   border: 1px solid #dddddd; /* Border for cells */
   color: white; /* Text color */
-  font-size: min(2.3vw,3.3vh); /* Font size */
+  font-size: min(2.8vw,3.3vh); /* Font size */
 }
 .mid-parent-container {
   display: flex;
   flex-direction: row; /* Horizontal layout by default */
   flex-wrap: wrap; /* Allow items to wrap to the next row */
 }
-@media (max-width: 1200px) {
+@media (max-width: 1050px) {
   .mid-parent-container {
     flex-direction: column;
     align-items: center; /* Center items horizontally */
@@ -139,17 +139,35 @@ width: 50vw;
   
   }
   .table-container {
-    top: 100vh;
+    top: 90vh;
   }
   #table2 {
-    top: 140vh;
-    left: 3vw;
+    top: 105vh;
+     width: 95vw;
   }
   .text-box2 {
-  margin-top: 190vh;  
+  margin-top: 140vh; 
+  width: 100vw; 
+  font-size: min(2vw,2.5vh);
   }
+  .text-box2 h2 {
+    font-size: min(2vw,2.8vh);
+    font-weight: bold;
+    
+    }
+    .text-box2 ol li::before {
+      width: 2.5vw;
+      height: 2vh;
+      background-color: blue; /* Blue circles */
+      border-radius: 50%; /* Rounded circles */
+      text-align: center;
+      line-height: 2.4vh; /* Vertically center text */
+      color: white; /* White text */
+      font-weight: bold;
+      margin-right: 1.3vw;
+      }
   .footer-text {
-   margin-top: 5vh;    
+   margin-top:none;    
   }
   .container {
     width: 100vw;
@@ -161,7 +179,7 @@ font-size: max(1vw,2vh,100px); /* Decrease font size */
 }
 .container {
   position: absolute;
-  right: 2vw; /* Move the buttons to the middle of the page and add 50px to move them to the right */
+  right: 4vw; /* Move the buttons to the middle of the page and add 50px to move them to the right */
   top: 25vh ; /* Move the buttons to the middle of the page and add 50px to move them to the right */
     display: flex;
     flex-direction: column; /* Ensure vertical stacking */
@@ -196,7 +214,7 @@ body {
   }
 .top-buttons button {
      border-radius: 10px; /* Round corners */
-     font-size: min(2vw,3vh); /* Increase font size */
+     font-size: min(2.5vw,3vh); /* Increase font size */
     border: 2px solid transparent; /* Add transparent border */
     cursor: pointer; /* Change cursor on hover */
     white-space: nowrap;
@@ -227,8 +245,8 @@ body {
 .horizontal-buttons button {
     border-radius: 10vw;
     flex-wrap: nowrap;
-    padding: 4vh 3vw; /* Reduce padding for smaller size */
-    font-size: min(2vw,3vh); /* Decrease font size */
+    padding: 2vh 1.5vw; /* Reduce padding for smaller size */
+    font-size: min(2.5vw,2.5vh); /* Decrease font size */
     background-color: transparent;
     color: #000000; /* Blue text color */
     cursor: pointer;
@@ -283,8 +301,8 @@ body {
   color: white; /* Change color on hover */
 }
 .footer-text ul li a {
-  font-size: min(1.5vw,2.5vh);
+  font-size: min(2vw,2.5vh);
 }
 .footer-text h3 {
-  font-size: min(1.6vw,3vh); /* Adjust the font size as needed */
+  font-size: min(2.1vw,3vh); /* Adjust the font size as needed */
 }

@@ -1,9 +1,8 @@
-
 #table2 {
   border-collapse: collapse;
   width: 50vw;
   position: absolute; /* Position the table */
-  top: 95vh; /* Position 70% from the top */
+  top: 92vh; /* Position 70% from the top */
   right: 0vw; /* Position 10% from the right */
 }
 #table2 th, #table2 td {
@@ -121,7 +120,86 @@ width: 50vw;
   flex-direction: row; /* Horizontal layout by default */
   flex-wrap: wrap; /* Allow items to wrap to the next row */
 }
-@media (max-width: 1020px) {
+/* small phone with max width of 640px and max height of 1136*/
+@media (max-width: 750px) and (max-height: 1139px) {
+  .mid-parent-container {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  
+  }
+  .mid-parent-container .imagecontainer  {
+    transform: translateX(-50%); /* Move container back by half its width */
+    
+  }
+  .mid-parent-container .container {
+  top: min(45vh,82vw);
+  right: auto; /* Move the buttons to the middle of the page and add 50px to move them to the right */
+  }
+  .imagecontainer {
+    top: 10vh;
+  }
+  .imagecontainer img {
+    height: min(35vh,60vw);
+    width: 97vw;
+  
+  }
+  .table-container {
+    top: min(75vh,115vw);
+  }
+  #table2 {
+    top: min(90vh,140vw);
+     width: 95vw;
+  }
+  .text-box2 {
+    background-color: rgba(255, 255, 255, 0.578);
+    margin-top:  min(130vh,200vw); /* Adjusted margin */
+    font-size: min(2vw,2.5vh);
+    line-height: 4.5vh;
+    
+    }
+    .text-box2 h2 {
+    font-size: min(2vw,2.8vh);
+    font-weight: bold;
+    
+    }
+    .text-box2 ol {
+    list-style-type: none; /* Remove default numbering */
+    counter-reset: my-counter; /* Reset counter for custom numbering */
+    padding-left: 0; /* Remove default padding */
+    }
+    .text-box2 ol li::before {
+    content: counter(my-counter); /* Use counter for numbering */
+    counter-increment: my-counter; /* Increment counter */
+    display: inline-block;
+    width: 3.5vw;
+    height: 2vh;
+    background-color: blue; /* Blue circles */
+    border-radius: 50%; /* Rounded circles */
+    text-align: center;
+    line-height: 1.9vh; /* Vertically center text */
+    color: white; /* White text */
+    font-weight: bold;
+    margin-right: 2vw;
+    font-size: min(3vw,3.8vh);
+    }
+  .footer-text {
+   margin-top:none;    
+  }
+  .footer-links ul li {
+    margin-bottom: 0vh;
+  }
+
+  .container {
+    width: 100vw;
+    }
+.horizontal-buttons {
+min-width: 100px;
+font-size: max(1vw,2vh); /* Decrease font size */
+}
+
+}
+/* medium phone with max width of 640px and max height of 1136*/
+@media (min-width: 750px) and (min-height: 750px){
   .mid-parent-container {
     flex-direction: column;
     align-items: center; /* Center items horizontally */
@@ -192,6 +270,80 @@ min-width: 100px;
 font-size: max(1vw,2vh,100px); /* Decrease font size */
 }
 }
+/* large phone with max width of 640px and max height of 1136*/
+@media (min-width: 1080px) and (max-width: 1125px) and (min-height: 2280px){
+  .mid-parent-container {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+  .mid-parent-container .imagecontainer  {
+    transform: translateX(-50%); /* Move container back by half its width */
+    
+  }
+  .mid-parent-container .container {
+  top: 50vh;
+  right: auto; /* Move the buttons to the middle of the page and add 50px to move them to the right */
+  }
+  .imagecontainer img {
+    height: 35vh;
+    width: 97vw;
+  
+  }
+  .table-container {
+    top: 75vh;
+  }
+  #table2 {
+    top: 90vh;
+     width: 95vw;
+  }
+  .text-box2 {
+    background-color: rgba(255, 255, 255, 0.578);
+    margin-top:  130vh; /* Adjusted margin */
+    font-size: min(2vw,2.5vh);
+    line-height: 4.5vh;
+    
+    }
+    .text-box2 h2 {
+    font-size: min(2vw,2.8vh);
+    font-weight: bold;
+    
+    }
+    .text-box2 ol {
+    list-style-type: none; /* Remove default numbering */
+    counter-reset: my-counter; /* Reset counter for custom numbering */
+    padding-left: 0; /* Remove default padding */
+    }
+    .text-box2 ol li::before {
+    content: counter(my-counter); /* Use counter for numbering */
+    counter-increment: my-counter; /* Increment counter */
+    display: inline-block;
+    width: 3.5vw;
+    height: 2vh;
+    background-color: blue; /* Blue circles */
+    border-radius: 50%; /* Rounded circles */
+    text-align: center;
+    line-height: 1.9vh; /* Vertically center text */
+    color: white; /* White text */
+    font-weight: bold;
+    margin-right: 2vw;
+    font-size: min(3vw,3.8vh);
+    }
+  .footer-text {
+   margin-top:none;    
+  }
+  .footer-links ul li {
+    margin-bottom: 0vh;
+  }
+  .container {
+    width: 100vw;
+    }
+.horizontal-buttons {
+min-width: 100px;
+font-size: max(1vw,2vh,100px); /* Decrease font size */
+}
+}
+/* Extra Large phone with max width of 640px and max height of 1136*/
+
 
 .container {
   position: absolute;
@@ -295,7 +447,7 @@ body {
   justify-content: space-between; /* Spread items horizontally */
   margin-left: 1vw; /* Add 1% margin from the left */
   margin-right: 1vw;
-  margin-top: 15vh;
+
   background-color: #f0f0f0; /* Change to your desired background color */
 
 }
@@ -307,7 +459,7 @@ body {
   padding: 0;
 }
 .footer-links ul li {
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 .footer-links ul li a {
   text-decoration: none;

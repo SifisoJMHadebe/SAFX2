@@ -121,7 +121,85 @@ width: 50vw;
   flex-wrap: wrap; /* Allow items to wrap to the next row */
 }
 /* small phone with max width of 640px and max height of 1136*/
-@media (max-width: 750px) and (max-height: 1139px) {
+@media (max-width: 750px) and (max-height: 1139px)  and (orientation: landscape){
+  .mid-parent-container {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  
+  }
+  .mid-parent-container .imagecontainer  {
+    transform: translateX(-50%); /* Move container back by half its width */
+    
+  }
+  .mid-parent-container .container {
+  top: min(65vh,82vw);
+  right: auto; /* Move the buttons to the middle of the page and add 50px to move them to the right */
+  }
+  .imagecontainer {
+    top: 10vh;
+  }
+  .imagecontainer img {
+    height: min(55vh,60vw);
+    width: 97vw;
+  
+  }
+  .table-container {
+    top: min(105vh,115vw);
+  }
+  #table2 {
+    top: min(125vh,140vw);
+     width: 95vw;
+  }
+  .text-box2 {
+    background-color: rgba(255, 255, 255, 0.578);
+    margin-top:  min(175vh,200vw); /* Adjusted margin */
+    font-size: min(2vw,2.5vh);
+    line-height: 4.5vh;
+    
+    }
+    .text-box2 h2 {
+    font-size: min(2vw,2.8vh);
+    font-weight: bold;
+    
+    }
+    .text-box2 ol {
+    list-style-type: none; /* Remove default numbering */
+    counter-reset: my-counter; /* Reset counter for custom numbering */
+    padding-left: 0; /* Remove default padding */
+    }
+    .text-box2 ol li::before {
+    content: counter(my-counter); /* Use counter for numbering */
+    counter-increment: my-counter; /* Increment counter */
+    display: inline-block;
+    width: 3.5vw;
+    height: 5.5vh;
+    background-color: blue; /* Blue circles */
+    border-radius: 50%; /* Rounded circles */
+    text-align: center;
+    line-height: 3.5vh; /* Vertically center text */
+    color: white; /* White text */
+    font-weight: bold;
+    margin-right: 2vw;
+    font-size: min(3vw,3.8vh);
+    }
+  .footer-text {
+   margin-top:none;    
+  }
+  .footer-links ul li {
+    margin-bottom: 0vh;
+  }
+
+  .container {
+    width: 100vw;
+    }
+.horizontal-buttons {
+min-width: 100px;
+font-size: max(1vw,2vh); /* Decrease font size */
+}
+
+}
+/* small phone with max width of 640px and max height of 1136*/
+@media (max-width: 750px) and (max-height: 1139px)  and (orientation: portrait){
   .mid-parent-container {
     flex-direction: column;
     align-items: center; /* Center items horizontally */
@@ -203,30 +281,34 @@ font-size: max(1vw,2vh); /* Decrease font size */
   .mid-parent-container {
     flex-direction: column;
     align-items: center; /* Center items horizontally */
+  
   }
   .mid-parent-container .imagecontainer  {
     transform: translateX(-50%); /* Move container back by half its width */
     
   }
   .mid-parent-container .container {
-  top: 50vh;
+  top: min(70vh,82vw);
   right: auto; /* Move the buttons to the middle of the page and add 50px to move them to the right */
   }
+  .imagecontainer {
+    top: 10vh;
+  }
   .imagecontainer img {
-    height: 35vh;
+    height: min(60vh,60vw);
     width: 97vw;
   
   }
   .table-container {
-    top: 75vh;
+    top: min(105vh,115vw);
   }
   #table2 {
-    top: 90vh;
+    top: min(120vh,140vw);
      width: 95vw;
   }
   .text-box2 {
     background-color: rgba(255, 255, 255, 0.578);
-    margin-top:  130vh; /* Adjusted margin */
+    margin-top:  min(170vh,200vw); /* Adjusted margin */
     font-size: min(2vw,2.5vh);
     line-height: 4.5vh;
     
@@ -245,12 +327,12 @@ font-size: max(1vw,2vh); /* Decrease font size */
     content: counter(my-counter); /* Use counter for numbering */
     counter-increment: my-counter; /* Increment counter */
     display: inline-block;
-    width: 3.5vw;
-    height: 2vh;
+    width: 2.5vw;
+    height: 3vh;
     background-color: blue; /* Blue circles */
     border-radius: 50%; /* Rounded circles */
     text-align: center;
-    line-height: 1.9vh; /* Vertically center text */
+    line-height: 2.5vh; /* Vertically center text */
     color: white; /* White text */
     font-weight: bold;
     margin-right: 2vw;
@@ -262,13 +344,15 @@ font-size: max(1vw,2vh); /* Decrease font size */
   .footer-links ul li {
     margin-bottom: 0vh;
   }
+
   .container {
     width: 100vw;
     }
 .horizontal-buttons {
 min-width: 100px;
-font-size: max(1vw,2vh,100px); /* Decrease font size */
+font-size: max(1vw,2vh); /* Decrease font size */
 }
+
 }
 /* large phone with max width of 640px and max height of 1136*/
 @media (min-width: 1080px) and (max-width: 1125px) and (min-height: 2280px){

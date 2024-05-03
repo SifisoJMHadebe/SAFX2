@@ -467,7 +467,7 @@ body {
 .top-buttons button {
      border-radius: 10px; /* Round corners */
      font-size: min(2.5vw,3vh); /* Increase font size */
-    border: 2px solid transparent; /* Add transparent border */
+    border: 2px solid rgb(174, 174, 236); /* Add transparent border */
     cursor: pointer; /* Change cursor on hover */
     white-space: nowrap;
   }
@@ -497,7 +497,7 @@ body {
 .horizontal-buttons button {
     border-radius: 10vw;
     flex-wrap: nowrap;
-    padding: 2vh 1.5vw; /* Reduce padding for smaller size */
+    padding: 1vh .5vw; /* Reduce padding for smaller size */
     font-size: min(2.5vw,2.5vh); /* Decrease font size */
     background-color: transparent;
     color: #000000; /* Blue text color */
